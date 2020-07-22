@@ -1,13 +1,34 @@
 {
-  "name": "s-vuetify",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@vt7/s-vuetify",
+  "version": "1.0.1",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --report --target lib --name s-vuetify ./src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "nuxt",
+    "src",
+    "dist/*.{js,css}"
+  ],
+  "keywords": [
+    "vue",
+    "nuxt",
+    "vuetify",
+    "loading",
+    "confirm",
+    "notify",
+    "custom"
+  ],
+  "main": "dist/s-vuetify.common.js",
   "dependencies": {
+    "v-money": "^0.8.1"
+  },
+  "peerDependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
