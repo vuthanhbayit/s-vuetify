@@ -1,6 +1,6 @@
 {
   "name": "@vt7/s-vuetify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -12,8 +12,7 @@
   },
   "files": [
     "nuxt",
-    "src",
-    "dist/*.{js,css}"
+    "src"
   ],
   "keywords": [
     "vue",
@@ -24,7 +23,7 @@
     "notify",
     "custom"
   ],
-  "main": "dist/s-vuetify.common.js",
+  "main": "src/index.js",
   "dependencies": {
     "v-money": "^0.8.1"
   },
